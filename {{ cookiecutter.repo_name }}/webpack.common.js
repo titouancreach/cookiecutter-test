@@ -11,7 +11,7 @@ module.exports = {
   },
 
   entry: {
-    '{{cookiecutter.app_code}}': path.resolve(__dirname, appcode + '/src/')
+    '{{cookiecutter.app_code}}': path.resolve(__dirname, '{{cookiecutter.app_code}}/src/')
   },
 
   output: {
