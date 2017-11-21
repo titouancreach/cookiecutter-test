@@ -6,5 +6,8 @@
     "version": "{{ cookiecutter.app_version }}",
     "author": "{{ cookiecutter.app_author }}"
   },
-  "appscope": "{{ cookiecutter.app_scope }}"
+  "appscope": "{{ cookiecutter.app_scope }}",
+  "ui": {
+    "left_panel": true
+  }
 }
