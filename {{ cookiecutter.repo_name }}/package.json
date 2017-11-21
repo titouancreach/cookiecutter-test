@@ -2,7 +2,9 @@
   "name": "cookiecutter.app_code",
   "version": "{{ cookiecutter.app_version }}",
   "author": "{{ cookiecutter.app_author }}",
-  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --config webpack.dev.js"
+  },
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.0.0-beta.32",
