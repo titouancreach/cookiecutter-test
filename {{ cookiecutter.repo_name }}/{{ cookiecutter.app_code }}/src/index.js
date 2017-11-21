@@ -11,6 +11,7 @@ import Hello from '@/Hello.vue';
 
 const {{ camel_case(cookiecutter.app_code) }} = {
   initUI(app) {
+    Vue.use(Vuetify);
     this.vm = new Vue({
       render: h => h(Hello),
       components: {
