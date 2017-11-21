@@ -1,0 +1,17 @@
+{
+  "extends": ["eslint-config-airbnb/legacy"],
+  "env": {
+    "es6": true
+  },
+  "globals": {
+    "jQuery": true,
+    "eegle": true
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "html" // require to lint .vue file.
+  ],
+  "settings": {
+    "html/indent": "0"
+  }
+}

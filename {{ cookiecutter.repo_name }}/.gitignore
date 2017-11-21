@@ -1,2 +1,4 @@
 dist/*
 !dist/.gitkeep
+yarn.lock
+/node_modules/
