@@ -8,6 +8,6 @@
   },
   "appscope": "{{ cookiecutter.app_scope }}",
   "ui": {
-    "left_panel": true
+    "leftpanel": true
   }
 }
