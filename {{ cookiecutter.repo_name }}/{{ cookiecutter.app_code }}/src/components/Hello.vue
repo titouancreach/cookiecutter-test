@@ -1,5 +1,7 @@
 <template>
-  <v-toolbar> Hello World! </v-toolbar>
+  <v-toolbar>
+    <v-toolbar-title>Hello World!</v-toolbar-title>
+  </v-toolbar>
 </template>
 
 <script>
