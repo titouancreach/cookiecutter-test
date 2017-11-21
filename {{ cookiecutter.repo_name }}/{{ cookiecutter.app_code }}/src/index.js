@@ -5,7 +5,7 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify';
 
-const {{ camel_case(appcopde) }} = {
+const {{ camel_case(cookiecutter.appcopde) }} = {
   initUI(app) {
   },
 
