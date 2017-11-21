@@ -1,5 +1,5 @@
 <template>
-  <v-card>Hello World!</v-card>
+  <v-toolbar> Hello World! </v-toolbar>
 </template>
 
 <script>

@@ -7,7 +7,7 @@ import Vuetify from 'vuetify';
 
 import './style/style.scss';
 
-import Hello from '@/Hello.vue';
+import Hello from '@/components/Hello.vue';
 
 const {{ camel_case(cookiecutter.app_code) }} = {
   initUI(app) {

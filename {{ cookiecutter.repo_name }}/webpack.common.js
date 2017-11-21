@@ -9,7 +9,7 @@ module.exports = {
     modules: ['node_modules'],
     alias: {
       vue: 'vue/dist/vue.js',
-      '@': path.resolve(__dirname, '{{cookiecutter.app_code}}/src/components')
+      '@': path.resolve(__dirname, '{{cookiecutter.app_code}}/src')
     }
   },
 
