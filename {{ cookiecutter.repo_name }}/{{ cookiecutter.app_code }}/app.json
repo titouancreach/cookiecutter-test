@@ -1,4 +1,9 @@
 {
   "name": "{{ cookiecutter.app_name }}",
-  "appcode": "{{ cookiecutter.app_code }}"
+  "appcode": "{{ cookiecutter.app_code }}",
+  "apptype": "{{ cookiecutter.app_type }}",
+  "appinfo": {
+    "version": "{{ cookiecutter.app_version }}",
+    "author": "{{ cookiecutter.app_author }}"
+  }
 }

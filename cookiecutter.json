@@ -1,6 +1,8 @@
 {
-  "app_code": "",
-  "app_name": "",
-  "repo_name": "",
-  "type": ["mapbox"]
+  "app_code": "myapp",
+  "app_name": "My App",
+  "repo_name": "myapp",
+  "app_type": ["mapbox"],
+  "app_version": "1.0.0",
+  "app_author": "Eegle.io"
 }
