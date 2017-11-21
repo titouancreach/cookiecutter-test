@@ -1,0 +1,4 @@
+{
+  "name": "{{ cookiecutter.app_name }}",
+  "appcode": "{{ cookiecutter.app_code }}"
+}
