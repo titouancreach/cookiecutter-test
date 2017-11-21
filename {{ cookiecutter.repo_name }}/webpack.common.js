@@ -6,10 +6,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   resolve: {
-    modules: ['node_modules', '{{cookiecutter.app_code}}/src'],
+    modules: ['node_modules'],
     alias: {
       vue: 'vue/dist/vue.js',
-      '@': 'components'
+      '@': path.resolve(__dirname, '{{cookiecutter.app_code}}/src/components')
     }
   },
 
@@ -46,6 +46,13 @@ module.exports = {
           fallback: 'style-loader',
           use: ['css-loader', 'sass-loader']
         })
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          extractCSS: true
+        }
       }
     ]
   },
