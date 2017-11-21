@@ -5,5 +5,6 @@
   "appinfo": {
     "version": "{{ cookiecutter.app_version }}",
     "author": "{{ cookiecutter.app_author }}"
-  }
+  },
+  "appscope": "{{ cookiecutter.app_scope }}"
 }

@@ -4,5 +4,6 @@
   "repo_name": "myapp",
   "app_type": ["mapbox"],
   "app_version": "1.0.0",
-  "app_author": "Eegle.io"
+  "app_author": "Eegle.io",
+  "app_scope": ["public", "builtin"]
 }
