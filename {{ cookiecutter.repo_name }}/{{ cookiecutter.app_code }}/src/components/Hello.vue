@@ -1,5 +1,5 @@
 <template>
-  <span>Hello World!</span>
+  <v-card>Hello World!</v-card>
 </template>
 
 <script>
