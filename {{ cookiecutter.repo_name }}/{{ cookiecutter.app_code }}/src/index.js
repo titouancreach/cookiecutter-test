@@ -7,10 +7,15 @@ import Vuetify from 'vuetify';
 
 import './style/style.scss';
 
+import Hello from '@/Hello.vue';
+
 const {{ camel_case(cookiecutter.app_code) }} = {
   initUI(app) {
     this.vm = new Vue({
-      template: '<span> Hello World </span>'
+      render: h => h(Hello),
+      components: {
+        Hello
+      }
     }).$mount('#{{ cookiecutter.app_code }}-mntpt')
   },
 
