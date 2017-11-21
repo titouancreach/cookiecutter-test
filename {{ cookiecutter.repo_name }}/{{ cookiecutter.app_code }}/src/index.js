@@ -5,6 +5,8 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify';
 
+import './style/style.scss';
+
 const {{ camel_case(cookiecutter.app_code) }} = {
   initUI(app) {
   },
