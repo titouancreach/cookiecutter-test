@@ -9,12 +9,12 @@ module.exports = {
     modules: ['node_modules'],
     alias: {
       vue: 'vue/dist/vue.js',
-      '@': path.resolve(__dirname, '{{cookiecutter.app_code}}/src')
+      '@': path.resolve(__dirname, 'app/src')
     }
   },
 
   entry: {
-    '{{cookiecutter.app_code}}': path.resolve(__dirname, '{{cookiecutter.app_code}}/src/')
+    '{{cookiecutter.app_code}}': path.resolve(__dirname, 'app/src/')
   },
 
   output: {
