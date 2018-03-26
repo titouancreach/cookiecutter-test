@@ -3,28 +3,44 @@
   "version": "{{ cookiecutter.app_version }}",
   "author": "{{ cookiecutter.app_author }}",
   "scripts": {
-    "build": "./node_modules/.bin/webpack --config webpack.dev.js"
+    "build": "./node_modules/.bin/webpack --mode development",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "./**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.0.0-beta.32",
-    "@babel/preset-env": "^7.0.0-beta.32",
-    "@babel/preset-stage-0": "^7.0.0-beta.32",
-    "babel-loader": "^8.0.0-beta.0",
-    "copy-webpack-plugin": "^4.2.1",
-    "css-loader": "^0.28.7",
-    "eslint": "^4.11.0",
-    "eslint-loader": "^1.9.0",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/preset-stage-0": "^7.0.0-beta.42",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^8.0.0-beta",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-loader": "^2.0.0",
     "eslint-plugin-html": "^4.0.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.19.0",
-    "vue": "^2.5.8",
-    "vue-loader": "^13.5.0",
-    "vue-template-compiler": "^2.5.8",
-    "vuetify": "^0.17.2",
-    "webpack": "^3.8.1",
-    "webpack-merge": "^4.1.1"
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-vue": "^4.4.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "node-sass": "^4.8.3",
+    "prettier": "^1.11.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "vue": "^2.5.16",
+    "vue-loader": "^14.2.2",
+    "vue-template-compiler": "^2.5.16",
+    "vuetify": "^1.0.10",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
   }
 }

@@ -1,5 +1,14 @@
 {
-  "extends": ["eslint-config-airbnb/legacy"],
+  "plugins": [
+    "vue",
+    "prettier"
+  ],
+
+  "extends": [
+    "airbnb-base/legacy", 
+    "plugin:vue/recommended",
+    "plugin:prettier/recommended"
+  ],
   "env": {
     "es6": true
   },
@@ -7,11 +16,14 @@
     "jQuery": true,
     "eegle": true
   },
-  "parser": "babel-eslint",
-  "plugins": [
-    "html" // require to lint .vue file.
-  ],
-  "settings": {
-    "html/indent": "0"
+   "parserOptions": {
+     "parser": "babel-eslint",
+  },
+  rules: {
+    "prettier/prettier": "error",
+    "vue/mustache-interpolation-spacing": "error",
+    "vue/html-quotes": "error",
+    "vue/html-indent": ["warn", 2],
+    "max-len": ["error", 120]
   }
 }
