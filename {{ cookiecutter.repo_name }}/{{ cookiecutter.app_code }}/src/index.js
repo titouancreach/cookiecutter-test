@@ -23,7 +23,6 @@ const {{ camel_case(cookiecutter.app_code) }} = {
   exitUI(/* app */) {
     this.vm.$destroy();
   }
-
 };
 
 export default {{ camel_case(cookiecutter.app_code) }};
