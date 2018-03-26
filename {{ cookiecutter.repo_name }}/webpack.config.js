@@ -66,23 +66,23 @@ module.exports = {
     new ExtractTextPlugin('[name]/assets/css/[name]-style.css'),
     new CopyWebpackPlugin([
       {
-        from: '{{cookiecutter.app_code}}/app.json',
+        from: 'app/app.json',
         to: '{{cookiecutter.app_code}}'
       },
       {
-        from: '{{cookiecutter.app_code}}/mapdefs/',
+        from: 'app/mapdefs/',
         to: '{{cookiecutter.app_code}}/assets/mapdefs'
       },
       {
-        from: '{{cookiecutter.app_code}}/placeholders/',
+        from: 'app/placeholders/',
         to: '{{cookiecutter.app_code}}/placeholders'
       },
       {
-        from: '{{cookiecutter.app_code}}/logo/',
+        from: 'app/logo/',
         to: '{{cookiecutter.app_code}}/assets/logo/'
       },
       {
-        from: '{{cookiecutter.app_code}}/data/',
+        from: 'app/data/',
         to: '{{cookiecutter.app_code}}/assets/data/'
       }
     ])
