@@ -9,12 +9,12 @@ module.exports = {
     modules: ['node_modules'],
     alias: {
       vue: 'vue/dist/vue.js',
-      '@': path.resolve(__dirname, 'test_app/src')
+      '@': path.resolve(__dirname, '{{cookiecutter.app_code}}/src')
     }
   },
 
   entry: {
-    'test_app': path.resolve(__dirname, 'test_app/src/')
+    '{{cookiecutter.app_code}}': path.resolve(__dirname, '{{cookiecutter.app_code}}/src/')
   },
 
   output: {
@@ -66,24 +66,24 @@ module.exports = {
     new ExtractTextPlugin('[name]/assets/css/[name]-style.css'),
     new CopyWebpackPlugin([
       {
-        from: 'test_app/app.json',
-        to: 'test_app'
+        from: '{{cookiecutter.app_code}}/app.json',
+        to: '{{cookiecutter.app_code}}'
       },
       {
-        from: 'test_app/mapdefs/',
-        to: 'test_app/assets/mapdefs'
+        from: '{{cookiecutter.app_code}}/mapdefs/',
+        to: '{{cookiecutter.app_code}}/assets/mapdefs'
       },
       {
-        from: 'test_app/placeholders/',
-        to: 'test_app/placeholders'
+        from: '{{cookiecutter.app_code}}/placeholders/',
+        to: '{{cookiecutter.app_code}}/placeholders'
       },
       {
-        from: 'test_app/logo/',
-        to: 'test_app/assets/logo/'
+        from: '{{cookiecutter.app_code}}/logo/',
+        to: '{{cookiecutter.app_code}}/assets/logo/'
       },
       {
-        from: 'test_app/data/',
-        to: 'test_app/assets/data/'
+        from: '{{cookiecutter.app_code}}/data/',
+        to: '{{cookiecutter.app_code}}/assets/data/'
       }
     ])
   ]
