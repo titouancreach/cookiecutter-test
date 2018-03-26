@@ -10,17 +10,17 @@ import './style/style.scss';
 import Hello from '@/components/Hello.vue';
 
 const {{ camel_case(cookiecutter.app_code) }} = {
-  initUI(app) {
+  initUI(/* app */) {
     Vue.use(Vuetify);
     this.vm = new Vue({
-      render: h => h(Hello),
       components: {
         Hello
-      }
-    }).$mount('#{{ cookiecutter.app_code }}-mntpt')
+      },
+      render: h => h(Hello)
+    }).$mount('#{{ cookiecutter.app_code }}-mntpt');
   },
 
-  exitUI(app) {
+  exitUI(/* app */) {
     this.vm.$destroy();
   }
 
